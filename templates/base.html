@@ -1,0 +1,22 @@
+{% load static %}
+<html>
+
+<head>
+    <title>Employeee details</title> 
+    <link href="{% static 'css/base.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1><a href="{% url 'home' %}">Employee Lists</a></h1>
+        <div class="nav-right">
+            <a href="{% url 'new_employee' %}">+ New employee</a>
+            </div>
+    </header>
+    <div>
+        {% block content %}
+        {% endblock content %}
+    </div>
+</body>
+
+</html>
